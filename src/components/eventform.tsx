@@ -25,7 +25,7 @@ const EventForm: React.FC<EventFormProps> = ({ onClose, eventData }) => {
     mutationFn: (data: any) =>
       isEdit ? updateEvent(eventData.id, data) : createEvent(data),
     onSuccess: () => {
-      queryClient.invalidateQueries(["events"]);
+      queryClient.invalidateQueries({ queryKey: ["events"] });
       onClose();
     },
   });
