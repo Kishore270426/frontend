@@ -20,7 +20,7 @@ export default function Home() {
 
   const deleteMutation = useMutation({
     mutationFn: (id: string) => deleteEvent(id),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["events"] });
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["events"] }),
 
   });
 
