@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api", // your Django backend
+  baseURL: "https://backend-2-pim5.onrender.com/api", // your Django backend 
 });
 
 // Get all events

@@ -25,7 +25,7 @@ const EventDetailsPage = () => {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/api/events/${id}/`);
+        const res = await axios.get(`https://backend-2-pim5.onrender.com/api/events/${id}/`);
         setEvent(res.data);
       } catch (err) {
         setError("Failed to fetch event details");
