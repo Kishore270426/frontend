@@ -1,0 +1,82 @@
+.event-details-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.event-details-container h1 {
+  color: #1e3a8a; /* dark blue */
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.event-details-container p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.event-meta {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.event-meta span {
+  font-weight: bold;
+}
+
+.event-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.event-buttons button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.event-buttons .edit-btn {
+  background-color: #2563eb; /* blue */
+  color: white;
+}
+
+.event-buttons .edit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.event-buttons .delete-btn {
+  background-color: #dc2626; /* red */
+  color: white;
+}
+
+.event-buttons .delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+.event-buttons .back-btn {
+  background-color: #e5e7eb; /* gray */
+  color: #1f2937;
+}
+
+.event-buttons .back-btn:hover {
+  background-color: #d1d5db;
+}
+
+.loading,
+.error,
+.no-event {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #555;
+}
